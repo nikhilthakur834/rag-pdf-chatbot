@@ -27,3 +27,24 @@ Python, Streamlit, pypdf, sentence-transformers, FAISS, Google Gemini API
 ## Run Locally
 ```bash
 pip install -r requirements.txt
+```
+Set your API key, then start the app:
+```bash
+# Windows PowerShell
+$env:GEMINI_API_KEY="your_key_here"
+streamlit run app.py
+```
+
+## Project Structure
+- `app.py`: Streamlit user interface
+- `rag_engine.py`: embeddings, vector search and answer generation
+- `pdf_loader.py`: PDF reading and chunking
+
+## Limitations
+- Scanned (image-only) PDFs are not supported, as there is no OCR.
+- Text inside images and diagrams is not extracted.
+- Retrieval is based on meaning, so questions like "what is on page 5?" may not work.
+
+## Future Improvements
+- Support for PowerPoint and Word files
+- Evaluation results (add your accuracy here after testing)
