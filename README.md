@@ -3,7 +3,7 @@
 A Retrieval-Augmented Generation (RAG) application that answers questions from PDF documents.
 Every answer is grounded in the uploaded documents and cites the source file and page number.
 
-**Live demo:** (add the Streamlit link here after deployment)
+**Live demo:** https://rag-pdf-chatbot-ef7szn2ukrrhyrrneg5rbq.streamlit.app/
 
 ## Features
 - Upload one or more PDF files and ask questions in natural language
